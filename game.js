@@ -95,7 +95,7 @@ function raiseClaw(){
     // we select the winner
     result = selectWinner(winningOdds);
     // we choose a unique ball preview aligned to that winning number
-    claw_hands_el.src = `Assets/machine_imgs/ball${result}.svg`
+    claw_hands_el.src = `claw-machine-widget-main/Assets/machine_imgs/ball${result}.svg`
     claw_rope_el.style.transform = `scale(1,1)`
     claw_hands_el.style.transform = `translateY(0px)`
     // we kill some time waiting for the claw machine animation to wrap up    
