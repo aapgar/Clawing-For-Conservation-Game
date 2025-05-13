@@ -13,7 +13,7 @@ function loadPage() {
     window_el.style.transform = "translateY(0px)"
     download_el.style.opacity = "1"
     playAgain_el.style.opacity = "1"
-    result_img_el.src = `Assets/preview_imgs/preview${result}.png`
+    result_img_el.src = `claw-machine-widget-main/Assets/preview_imgs/preview${result}.png`
 }
 
 // this actually calls that loading function
@@ -22,7 +22,7 @@ loadPage();
 // this tells the website to find the winning prize imagine and prompt the user to download if they hit the download button
 download_el.addEventListener("click", () => {
     const link = document.createElement('a')
-    link.href = `Assets/prize_imgs/prize${result}.jpeg` // this is where you can change the file type of the prize to something besides .jpeg
+    link.href = `claw-machine-widget-main/Assets/prize_imgs/prize${result}.jpeg` // this is where you can change the file type of the prize to something besides .jpeg
     link.download = `claw-machine-prize.jpeg`
     document.body.appendChild(link)
     link.click()
